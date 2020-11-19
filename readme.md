@@ -1,5 +1,8 @@
 # Laravel Administrator
 
+
+#update de FrozenNode/Laravel-Administrator para php 7.3 todos los creditos al creador esto solo es un fix
+
 Administrator is an administrative interface builder for [Laravel](http://laravel.com). With Administrator you can visually manage your Eloquent models and their relations, and also create stand-alone settings pages for storing site data and performing site tasks.
 
 - **Author:** Jan Hartigan
