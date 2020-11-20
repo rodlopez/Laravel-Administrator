@@ -494,7 +494,8 @@
 		{
 			var options = valueAccessor(),
 				limit = options.limit,
-				val = options.value();
+				val = options.value;
+				// val = options.value();
 
 			val = val === null ? '' : val + '';
 
