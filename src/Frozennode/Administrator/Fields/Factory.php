@@ -384,8 +384,7 @@ class Factory {
 	public function getEditFields($loadRelationships = true, $override = false)
 	{
 
-		if( $this->editFields == null || ( !sizeof($this->editFields)) || $override ) 
-		{
+		if( $this->editFields == null || ( !sizeof($this->editFields)) || $override ) {
 			$this->editFields = array();
 
 			//iterate over each supplied edit field
