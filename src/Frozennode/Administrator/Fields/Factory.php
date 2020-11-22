@@ -383,7 +383,8 @@ class Factory {
 	 */
 	public function getEditFields($loadRelationships = true, $override = false)
 	{
-		if ( ($this->editFields != null && !sizeof($this->editFields)) || $override)
+
+		if( $this->editFields == null || ( !sizeof($this->editFields)) || $override ) 
 		{
 			$this->editFields = array();
 
@@ -395,7 +396,9 @@ class Factory {
 			}
 		}
 
-		return $this->editFields != null ? $this->editFields : [];
+		$this->editFields = $this->editFields != null ? $this->editFields : [];
+
+		return $this->editFields;
 	}
 
 	/**
